@@ -1,0 +1,10 @@
+.welcomeText{
+    font-size: 4rem;
+    line-height: 120%;
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    .welcomeText{
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,22 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+mat-form-field input {
+    border: none;
+    height: initial !important;
+    margin: 0;
+}
+mat-form-field input:focus {
+    border: none;
+    box-shadow: none;
+    height: initial !important;
+}
+#icons a{
+    color: wheat;
+    padding-right: 15px;
+}
+#icons a .fa:hover{
+    color:black;
+    cursor:pointer;
+    transform:scale(1.2) rotate(10deg);
+    }

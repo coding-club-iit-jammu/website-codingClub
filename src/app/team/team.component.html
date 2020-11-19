@@ -1,0 +1,30 @@
+<div class="grey darken-4" style="margin-top: 40px;">
+    <div class="container" style="padding-top: 40px; padding-bottom: 100px;">
+        <div class="row center white-text">
+            <p style="font-size: 10vw; margin: 50px 0px;">#Our Team</p>
+        </div>
+        
+        <div class="row">
+            <div class="col m3 s6" *ngFor="let user of team" style="padding-bottom: 25px;">
+                <div class="user-card" >
+                    <div class="user-cards-img">
+                        <img class="user-cards-image" src="{{user['image']}}" />
+                    </div>
+                    <div class="user-cards-content white-text center-align">
+                        <h5 style="margin:0;"><b>{{user['name']}}</b></h5>
+                        <p style="margin:0; height: 50px;">{{user['post']}}</p>
+                        <ul style="margin:0;">
+                            <li >
+                                <a href="{{user['github']}}"><i class="fa fa-github"></i></a>
+                            </li>
+                            
+                            <li>
+                                <a href="{{user['linkedin']}}"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
