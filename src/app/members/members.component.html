@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col s6 m3 user-card" *ngFor="let user of finalArr">
                 <mat-card class="example-card" style="border-radius: 25px 0 25px 0;">
-                    <img mat-card-image src="{{user['image']}}">
+                    <img mat-card-image src="{{user['image']}}?size=256">
                     <mat-card-title>
                         {{user['name'].trim().split(" ")[0].substr(0,10)}}
                     </mat-card-title>
