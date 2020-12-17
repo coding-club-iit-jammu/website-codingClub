@@ -15,6 +15,7 @@ export class Wps2020Component implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.openDialog();
   }
   openDialogWithLink(linkGot : string) {
     const dialogRef = this.dialog.open(DialogContent, {
