@@ -1,0 +1,40 @@
+<div id="index-banner" class="parallax-container valign-wrapper" style="background-color: rgba(0, 0, 0, 0.658); height: 300px; margin-top: 55px;">
+    <div class="section no-pad-bot" style="width: 100%;" >
+      <div class="container">
+        <div class="row center">
+            <p class="white-text" style="font-size: 40px;">Weekly Problem Solving</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/dan-dennis-GyLl2YD7g54-unsplash.jpg"></div>
+  </div>
+<div class="red lighten-5">
+    <div class="container" style="padding-top: 40px; padding-bottom: 100px;">
+        <div class="row" style="padding-bottom:10px">
+            
+            <p style="font-size: 20px">{{event_description}}</p>
+            <p style="font-size: 14px; text-align: justify;">{{event_description_full}}</p>
+        </div>
+        <div class="row" style="padding-bottom:10px">
+            <p style="font-size: 30px;">Program Features</p>
+            <ol style="padding-bottom: 20px;">
+                <li style="text-align: justify;"><b>Weekly Problem Assignments</b> - you will be shared a list of problems you will have to complete by the end of the week.
+                    Some resources will also be shared that can be useful to solve those problems. </li>
+                <li style="text-align: justify;"><b>Mentorship</b> - around 4-5 students will be assigned a mentor, i.e. 1st year students will be mentored by 2nd year students or 3rd year students
+                    <br>
+                    Role of a mentor will be to provide you the right resources which can help you solve those problems and give you some hints in case you are unable to solve some problem, discuss the problem solutions at the end of the week and finally grade you based on your progress.
+                </li>
+            </ol>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a class="btn green accent-3" (click)="openDialog()">Register</a>
+                <p>*Only for First Years</p>
+            </div>
+            <div class="col right">
+                <a class="btn blue" (click)="openDialogMentor()">Register as a Mentor</a>
+                <p>*For students in 2nd, 3rd Year</p>
+            </div>
+        </div>
+    </div>
+</div>

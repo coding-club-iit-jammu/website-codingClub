@@ -16,11 +16,11 @@ export class TeamComponent implements OnInit {
       'github' : 'https://github.com/abhishek0220'
     },
     {
-      'name' : 'Shaikh',
+      'name' : 'Mamun',
       'post' : 'Senior Member',
-      'image' : '/assets/team/defualt.jpg',
-      'linkedin' : 'https://www.linkedin.com/in/abhishek0220/',
-      'github' : 'https://github.com/abhishek0220'
+      'image' : '/assets/team/mamun.jpg',
+      'linkedin' : 'https://www.linkedin.com/in/shaikh-mamun-hoque-37466915b/',
+      'github' : 'https://github.com/PositronPiercer'
     },
     {
       'name' : 'Akash',
@@ -40,14 +40,14 @@ export class TeamComponent implements OnInit {
       'name' : 'Samarth',
       'post' : 'Department Head AI/ML',
       'image' : '/assets/team/Samarth.JPG',
-      'linkedin' : '',
-      'github' : ''
+      'linkedin' : 'https://www.linkedin.com/in/samarth-singh-3b993916b/',
+      'github' : 'https://github.com/sam6134'
     },
     {
       'name' : 'Daksh',
       'post' : 'Department Head Competitive Coding',
       'image' : '/assets/team/Daksh.jpg',
-      'linkedin' : '',
+      'linkedin' : 'https://www.linkedin.com/in/daksh-chauhan-a541571b3/',
       'github' : 'http://github.com/dak-x'
     },
     {
@@ -61,8 +61,8 @@ export class TeamComponent implements OnInit {
       'name' : 'Sachin',
       'post' : 'Event Management Head',
       'image' : '/assets/team/defualt.jpg',
-      'linkedin' : '',
-      'github' : ''
+      'linkedin' : 'https://www.linkedin.com/in/sachin-kumar-a10252b0/',
+      'github' : 'https://github.com/Sachindrck'
     },
     {
       'name' : 'Purnaabh',

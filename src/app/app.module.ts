@@ -16,13 +16,19 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDialogModule } from '@angular/material/dialog';
+import { Wps2020Component } from './wps2020/wps2020.component';
+import { EventsComponent } from './events/events.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TeamComponent,
-    MembersComponent
+    MembersComponent,
+    Wps2020Component,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,8 @@ import { MatSelectModule } from '@angular/material/select';
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

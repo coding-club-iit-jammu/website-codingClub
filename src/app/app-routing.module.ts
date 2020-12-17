@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home/home.component';
 import { MembersComponent } from './members/members.component';
 import { TeamComponent } from './team/team.component';
+import { Wps2020Component } from './wps2020/wps2020.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path:'member',
     component: MembersComponent
+  },
+  {
+    path:'WPS2020',
+    component: Wps2020Component
+  },
+  {
+    path:'events',
+    component: EventsComponent
   },
 ];
 
