@@ -20,7 +20,7 @@ export class EventsComponent implements OnInit {
   }
 
   fetchEvents() {
-     this.http.get('https://raw.githubusercontent.com/ashutoshc8101/coding-club-iit-jammu.github.io/EventDataIntoFile/src/app/events/events.json').pipe().subscribe((data : object)=>{
+     this.http.get('https://raw.githubusercontent.com/coding-club-iit-jammu/Club_Data/main/Website/events.json').pipe().subscribe((data : object)=>{
 
       for(var ind of Object.keys(data)){
         data[ind].forEach((ev) => {
