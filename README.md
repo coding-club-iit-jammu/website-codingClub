@@ -21,6 +21,16 @@ This is the source code for IIT Jammu coding club website (https://www.codingclu
 
 ```
 
+## Installation with Docker
+``` sh
+  git clone https://github.com/coding-club-iit-jammu/coding-club-iit-jammu.github.io.git
+  cd coding-club-iit-jammu.github.io
+  docker build --tag <image_name>:<version> .
+  docker run -p <port_on_local_machine>:80 <image_name>:<version>
+
+```
+
+
 ## Build
 
 Run `npm run build` to build the project, production files will be stored at `dist` folder
