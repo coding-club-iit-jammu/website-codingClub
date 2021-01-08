@@ -14,15 +14,15 @@ export class MembersComponent implements OnInit {
   totallist = [];
   isAvailable = true;
   lastGet = 0;
-  filterVal = new FormControl();
-  sortBy = new FormControl();
+  filterVal = '';
+  sortBy = '';
   constructor(
     private http: HttpClient
   ) { }
 
   ngOnInit(){
     this.fetchList();
-    this.sortBy.setValue('entry');
+    this.sortBy = 'entry'
   }
   @HostListener("window:scroll", [])
   onScroll(): void {
@@ -31,7 +31,7 @@ export class MembersComponent implements OnInit {
         this.lastGet = Date.now();
         console.log("scrolled");
         this.updateArr(this.finalArr.length);
-      }  
+      }
     }
   }
   fetchList(){
@@ -60,14 +60,14 @@ export class MembersComponent implements OnInit {
   }
   filterVia(){
     var tem : object[];
-    if(this.filterVal.value == null){
+    if(this.filterVal === null){
       tem = this.totallist;
     }
     else{
-      tem = this._filter(this.filterVal.value, this.totallist);
+      tem = this._filter(this.filterVal, this.totallist);
     }
     tem.sort((a,b) => {
-        var k = this.sortBy.value;
+        var k = this.sortBy;
         if ( a[k] < b[k] ){
           if(k == 'rating') return 1
           else return -1
@@ -83,7 +83,7 @@ export class MembersComponent implements OnInit {
     this.prefinalArr = tem;
     this.refresh();
   }
-  
+
   updateArr(n){
     for(var i=n; i<n+7 && i<this.prefinalArr.length; i++){
       this.finalArr.push(this.prefinalArr[i]);
