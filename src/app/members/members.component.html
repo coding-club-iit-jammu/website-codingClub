@@ -4,16 +4,15 @@
             <p style="font-size: 50px; margin: 50px 0px;" >#Our Members</p>
         </div>
         <div class="row">
-            <form (ngSubmit)="filterVia()">
-            <div class="col s7 m5">
+            <div class="col s7 m6">
                     <mat-form-field appearance="outline" color='warn' style="width: 100%;" >
                         <mat-label>Filter</mat-label>
-                        <input matInput [formControl]="filterVal">
+                        <input matInput [(ngModel)]="filterVal" (ngModelChange)="this.filterVia()" >
                     </mat-form-field>
             </div>
-            <div class="col s5 m5">
+            <div class="col s5 m6">
                 <mat-form-field appearance="outline" style="width: 100%;">
-                    <mat-select [formControl]="sortBy">
+                    <mat-select [(ngModel)]="sortBy" (ngModelChange)="this.filterVia()" >
                         <mat-option value="entry">Entry Number</mat-option>
                         <mat-option value="name">Name</mat-option>
                         <mat-option value="rating">Rating</mat-option>
@@ -21,10 +20,6 @@
                     <mat-label>Sort By</mat-label>
                 </mat-form-field>
             </div>
-            <div class="col m2 right">
-                <button mat-stroked-button class="white" style="width: 100%; height: 50px;">Search <mat-icon>search</mat-icon></button>
-            </div>
-            </form>
         </div>
         <div class="row">
             <div class="col s6 m3 user-card" *ngFor="let user of finalArr">
