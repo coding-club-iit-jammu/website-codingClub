@@ -8,7 +8,7 @@ This is the source code for IIT Jammu coding club website (https://www.codingclu
 # Technology Stack
 * Angular Js
 * Materilize css
-
+Testing vercel
 # Requirements
 * Nodejs --version >= 10
 
