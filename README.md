@@ -4,7 +4,7 @@
 <h1 align="center">Coding Club IIT Jammu</h1>
 
 This is the source code for IIT Jammu coding club website (https://www.codingclubiitjammu.tech/)
-
+Testing vercel
 # Technology Stack
 * Angular Js
 * Materilize css
