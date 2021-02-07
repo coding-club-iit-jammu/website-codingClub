@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatDialogModule } from '@angular/material/dialog';
 import { Wps2020Component } from './wps2020.component';
 
 describe('Wps2020Component', () => {
@@ -8,7 +8,8 @@ describe('Wps2020Component', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Wps2020Component ]
+      declarations: [ Wps2020Component ],
+      imports: [MatDialogModule],
     })
     .compileComponents();
   }));

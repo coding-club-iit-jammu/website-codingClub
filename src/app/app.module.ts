@@ -46,7 +46,8 @@ import { ReposComponent } from './repos/repos.component';
     ReactiveFormsModule,
     MatButtonModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
