@@ -1,5 +1,5 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ReposComponent } from './repos.component';
 
 describe('ReposComponent', () => {
@@ -8,7 +8,8 @@ describe('ReposComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReposComponent ]
+      declarations: [ ReposComponent ],
+      imports: [HttpClientTestingModule]
     })
     .compileComponents();
   }));
