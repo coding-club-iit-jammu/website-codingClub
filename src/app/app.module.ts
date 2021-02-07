@@ -19,6 +19,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Wps2020Component } from './wps2020/wps2020.component';
 import { EventsComponent } from './events/events.component';
+import { ReposComponent } from './repos/repos.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { EventsComponent } from './events/events.component';
     TeamComponent,
     MembersComponent,
     Wps2020Component,
-    EventsComponent
+    EventsComponent,
+    ReposComponent
   ],
   imports: [
     BrowserModule,
