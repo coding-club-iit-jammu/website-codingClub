@@ -120,6 +120,13 @@ export class TeamComponent implements OnInit {
       'linkedin' : 'https://www.linkedin.com/in/aanjaney-kumar-verma-54b374191',
       'github' : 'https://github.com/Akuver'
     },
+    {
+      'name' : 'Ashutosh',
+      'post' : 'Core team',
+      'image' : '/assets/team/defualt.jpg',
+      'linkedin' : '#',
+      'github' : 'https://github.com/ashutoshc8101'
+    },
 
   ];
   constructor() { }
